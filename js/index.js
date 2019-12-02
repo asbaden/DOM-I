@@ -49,6 +49,9 @@ middleImg.setAttribute('src',siteContent["main-content"]["middle-img-src"])
 
 let header = document.querySelector("h1");
 header.textContent = siteContent["cta"]["h1"]
+header.style.wordSpacing = "100vw"
+
+
 
 let hbutton = document. querySelector("button");
 hbutton.textContent = siteContent["cta"]["button"]
@@ -61,11 +64,16 @@ navItems[3].textContent = siteContent["nav"]["nav-item-4"];
 navItems[4].textContent = siteContent["nav"]["nav-item-5"];
 navItems[5].textContent = siteContent["nav"]["nav-item-6"];
 
+
+
+
+
 navItems.forEach(function(currentValue){
   currentValue.style.color ="blue";
 })
 
 let navAdditions = document.querySelector("nav");
+
 const firstAddition = document.createElement("a");
 firstAddition.textContent = "Prepend";
 
@@ -75,6 +83,9 @@ const secondAddition = document.createElement("a");
 secondAddition.textContent = "Append";
 
 navAdditions.append("secondAddition")
+
+navAdditions.style.color = "blue";
+
 
 
 
@@ -104,6 +115,9 @@ contactP[2].textContent = siteContent["contact"]["email"]
 
 let footerPart = document.querySelector("footer");
 footerPart.textContent = siteContent["footer"]["copyright"]
+
+
+
 
 
 
